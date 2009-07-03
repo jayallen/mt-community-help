@@ -2,6 +2,8 @@
 
 The CommunityHelp plugin eases the pain and confusion sometimes caused by Movable Type errors by adding a link on the error screen to a page where more details about the error can be found.
 
+[![Screenshot of CommunityHelp in action][screenshot]][thumbnail]
+
 ## VERSION ##
 
 1.0 (released October 23rd, 2008)
@@ -16,7 +18,7 @@ This program is distributed under the terms of the GNU General Public License, v
 
 ## INSTALLATION ##
 
-Unpack the archive. In plugins/CommunityHelp/trunk you will find a plugins directory. Simply copy the plugins/CommunityHelp directory from the archive into your plugins directory so that you have:
+Download the code or the Git repo. Inside you will find a directory (under `plugins`) called `CommunityHelp`. Simply copy the that directory from the archive into your plugins directory so that you have:
 
     MT_DIR/plugins/CommunityHelp
 
@@ -44,3 +46,5 @@ This plugin was brought to you by [Jay Allen][], Principal and Chief Architect o
 [Melody]: http://openmelody.org
 [Jay Allen]: http://jayallen.org
 [Endevver Consulting]: http://endevver.com
+[screenshot]: doc/images/screenshot-errorscreen-t.jpg  "Screenshot of CommunityHelp in action"
+[thumbnail]: doc/images/screenshot-errorscreen.jpg
