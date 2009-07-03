@@ -1,0 +1,19 @@
+### CommunityHelp - A plugin for Movable Type.
+# Copyright (c) 2007, Jay Allen
+# This program is distributed under the terms of the
+# GNU General Public License, version 2.
+# $Id: config.yaml 62 2008-10-24 02:47:51Z jayallen $
+name: CommunityHelp
+key: CommunityHelp
+id: CommunityHelp
+version: 1.0
+author_name: Jay Allen
+author_link: http://endevver.com/
+description: Enhances the MT error screen with links to more help about the error.
+
+config_settings:
+    ErrorHelpURL:
+        default: http://endevver.com/mtsearch?mtorg=1&q=
+
+callbacks:
+    *::template_source.error: $CommunityHelp::CommunityHelp::add_link

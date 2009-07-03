@@ -1,0 +1,46 @@
+# CommunityHelp plugin for Movable Type and Melody #
+
+The CommunityHelp plugin eases the pain and confusion sometimes caused by Movable Type errors by adding a link on the error screen to a page where more details about the error can be found.
+
+## VERSION ##
+
+1.0 (released October 23rd, 2008)
+
+## REQUIREMENTS ##
+
+This plugin is compatible with [Movable Type][] v4.1 or higher and all versions of [Melody][].
+
+## LICENSE ##
+
+This program is distributed under the terms of the GNU General Public License, version 2.
+
+## INSTALLATION ##
+
+Unpack the archive. In plugins/CommunityHelp/trunk you will find a plugins directory. Simply copy the plugins/CommunityHelp directory from the archive into your plugins directory so that you have:
+
+    MT_DIR/plugins/CommunityHelp
+
+## CONFIGURATION ##
+
+By default, the help link goes to http://endevver.com/mtsearch with the MT error message filled in and the scope selector set to "Full search of movabletype.org and subdomains". However, it can be customized by adding the ErrorHelpURL config directive to your mt-config.cgi:
+
+    ErrorHelpURL http://movabletype.org/documentation/errors/
+
+The encoded error message will be appended directly onto the end of the ErrorHelpURL value so make sure that it's either a slash or an incomplete parameter assignment of the last query parameter (e.g. http://example.com/search?foo=1&bar=2&baz= )
+
+## TODO ##
+
+* I should probably make that paramterized in printf style.
+
+## VERSION HISTORY ##
+
+    * 10/23/2008 - Initial public release of v1.0 
+
+## AUTHOR ##
+
+This plugin was brought to you by [Jay Allen][], Principal and Chief Architect of [Endevver Consulting][].
+
+[Movable Type]: http://movabletype.org
+[Melody]: http://openmelody.org
+[Jay Allen]: http://jayallen.org
+[Endevver Consulting]: http://endevver.com
