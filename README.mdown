@@ -1,8 +1,12 @@
 # CommunityHelp plugin for Movable Type and Melody #
 
-The CommunityHelp plugin eases the pain and confusion sometimes caused by Movable Type errors by adding a link on the error screen to a page where more details about the error can be found.
+The CommunityHelp plugin is intended to reduce the frustration cause by Movable Type/Melody errors by making it dreadfully simple to search for information which can help clarify the error and possibly (hopefully) lead to a fast resolution.
 
-[![Screenshot of CommunityHelp in action][screenshot]][thumbnail]
+It does this by adding a simple link right on the error screen to a page where more details about the error can be found.
+
+<!-- Screenshot: http://github.com/jayallen/mt-community-help/raw/master/doc/images/screenshot-errorscreen.jpg -->
+
+[<p style="text-align:center">![Screenshot of CommunityHelp error](http://github.com/jayallen/mt-community-help/raw/master/doc/images/screenshot-errorscreen-t.jpg "Screenshot of CommunityHelp error")</p><p style="text-align:center">Click to zoom</p>](http://github.com/jayallen/mt-community-help/raw/master/doc/images/screenshot-errorscreen.jpg)
 
 ## VERSION ##
 
@@ -24,9 +28,11 @@ Download the code or the Git repo. Inside you will find a directory (under `plug
 
 ## CONFIGURATION ##
 
-By default, the help link goes to http://endevver.com/mtsearch with the MT error message filled in and the scope selector set to "Full search of movabletype.org and subdomains". However, it can be customized by adding the ErrorHelpURL config directive to your mt-config.cgi:
+By default, the help link goes to http://endevver.com/mtsearch with the error message filled in and the scope selector set to "Full search of movabletype.org and subdomains".  However, it can be customized by adding the ErrorHelpURL config directive to your mt-config.cgi:
 
     ErrorHelpURL http://movabletype.org/documentation/errors/
+
+    ErrorHelpURL http://melody.org/help/errors/
 
 The encoded error message will be appended directly onto the end of the ErrorHelpURL value so make sure that it's either a slash or an incomplete parameter assignment of the last query parameter (e.g. http://example.com/search?foo=1&bar=2&baz= )
 
