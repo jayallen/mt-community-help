@@ -4,8 +4,6 @@ The CommunityHelp plugin is intended to reduce the frustration cause by Movable 
 
 It does this by adding a simple link right on the error screen to a page where more details about the error can be found.
 
-<!-- Screenshot: http://github.com/jayallen/mt-community-help/raw/master/doc/images/screenshot-errorscreen.jpg -->
-
 [<p style="text-align:center">![Screenshot of CommunityHelp error](http://github.com/jayallen/mt-community-help/raw/master/doc/images/screenshot-errorscreen-t.jpg "Screenshot of CommunityHelp error")</p><p style="text-align:center">Click to zoom</p>](http://github.com/jayallen/mt-community-help/raw/master/doc/images/screenshot-errorscreen.jpg)
 
 ## VERSION ##
